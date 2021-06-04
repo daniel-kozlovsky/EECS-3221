@@ -1,4 +1,4 @@
-#assignment_2
+# assignment_2
 
 Assignment 2
 EECS 3221E

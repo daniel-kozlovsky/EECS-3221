@@ -1,2 +1,2 @@
-# EECS3221A3
-Assignment 3 EECS 3221 E
+# Assignment 3 
+

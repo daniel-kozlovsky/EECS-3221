@@ -1,0 +1,184 @@
+TEST 1:
+
+alarm> 
+Main Thread Received Alarm Request Number:(1) Alarm Request: (10) ["A"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(1) Alarm Request: (10) ["A"]
+Display Thread 1: Received Alarm Request Number:1 Alarm Request: (10) ["A"]
+Main Thread Received Alarm Request Number:(2) Alarm Request: (10) ["B"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(2) Alarm Request: (10) ["B"]
+Display Thread 2: Received Alarm Request Number:2 Alarm Request: (10) ["B"]
+Display Thread 1: Number of Seconds Left 8 : Alarm Request Number: (1) Alarm Request: (10) ["A"]
+Display Thread 2: Number of Seconds Left 8 : Alarm Request Number: (2) Alarm Request: (10) ["B"]
+Display Thread 1: Number of Seconds Left 6 : Alarm Request Number: (1) Alarm Request: (10) ["A"]
+Display Thread 2: Number of Seconds Left 6 : Alarm Request Number: (2) Alarm Request: (10) ["B"]
+Display Thread 1: Number of Seconds Left 4 : Alarm Request Number: (1) Alarm Request: (10) ["A"]
+Display Thread 2: Number of Seconds Left 4 : Alarm Request Number: (2) Alarm Request: (10) ["B"]
+Display Thread 1: Number of Seconds Left 2 : Alarm Request Number: (1) Alarm Request: (10) ["A"]
+Display Thread 2: Number of Seconds Left 2 : Alarm Request Number: (2) Alarm Request: (10) ["B"]
+Display Thread 1: Alarm Expired at 1573491860 : Alarm Request Number: (1) Alarm Request: (10) ["A"]
+(10) A
+Display Thread 2: Alarm Expired at 1573491861 : Alarm Request Number: (2) Alarm Request: (10) ["B"]
+(10) B
+
+TEST 2:
+
+alarm> 
+Bad Command
+
+TEST 3: 
+
+alarm> 
+Main Thread Received Alarm Request Number:(1) Alarm Request: (20) ["A"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(1) Alarm Request: (20) ["A"]
+Display Thread 1: Received Alarm Request Number:1 Alarm Request: (20) ["A"]
+Display Thread 1: Number of Seconds Left 18 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Main Thread Received Alarm Request Number:(2) Alarm Request: (3) ["A"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(2) Alarm Request: (3) ["A"]
+Display Thread 2: Received Alarm Request Number:2 Alarm Request: (3) ["A"]
+Display Thread 1: Number of Seconds Left 16 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 2: Number of Seconds Left 1 : Alarm Request Number: (2) Alarm Request: (3) ["A"]
+Main Thread Received Alarm Request Number:(3) Alarm Request: (3) ["B"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(3) Alarm Request: (3) ["B"]
+Display Thread 1: Received Alarm Request Number:3 Alarm Request: (3) ["B"]
+Display Thread 1: Number of Seconds Left 1 : Alarm Request Number: (3) Alarm Request: (3) ["B"]
+Display Thread 2: Alarm Expired at 1573492506 : Alarm Request Number: (2) Alarm Request: (3) ["A"]
+(3) A
+Display Thread 1: Alarm Expired at 1573492508 : Alarm Request Number: (3) Alarm Request: (3) ["B"]
+(3) B
+Display Thread 1: Number of Seconds Left 10 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 1: Number of Seconds Left 8 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 1: Number of Seconds Left 6 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 1: Number of Seconds Left 4 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 1: Number of Seconds Left 2 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+Display Thread 1: Alarm Expired at 1573492521 : Alarm Request Number: (1) Alarm Request: (20) ["A"]
+(20) A
+
+TEST 4:
+
+alarm> 
+Main Thread Received Alarm Request Number:(1) Alarm Request: (5) ["A"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(1) Alarm Request: (5) ["A"]
+Display Thread 1: Received Alarm Request Number:1 Alarm Request: (5) ["A"]
+Display Thread 1: Number of Seconds Left 3 : Alarm Request Number: (1) Alarm Request: (5) ["A"]
+Main Thread Received Alarm Request Number:(2) Alarm Request: (5) ["B"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(2) Alarm Request: (5) ["B"]
+Display Thread 2: Received Alarm Request Number:2 Alarm Request: (5) ["B"]
+Main Thread Received Alarm Request Number:(3) Alarm Request: (5) ["C"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(3) Alarm Request: (5) ["C"]
+Display Thread 1: Received Alarm Request Number:3 Alarm Request: (5) ["C"]
+Display Thread 2: Number of Seconds Left 3 : Alarm Request Number: (2) Alarm Request: (5) ["B"]
+Display Thread 1: Number of Seconds Left 1 : Alarm Request Number: (1) Alarm Request: (5) ["A"]
+Main Thread Received Alarm Request Number:(4) Alarm Request: (5) ["D"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(4) Alarm Request: (5) ["D"]
+Display Thread 2: Received Alarm Request Number:4 Alarm Request: (5) ["D"]
+Display Thread 2: Number of Seconds Left 1 : Alarm Request Number: (2) Alarm Request: (5) ["B"]
+Display Thread 1: Alarm Expired at 1573492633 : Alarm Request Number: (1) Alarm Request: (5) ["A"]
+(5) A
+Display Thread 2: Alarm Expired at 1573492635 : Alarm Request Number: (2) Alarm Request: (5) ["B"]
+(5) B
+Display Thread 1: Alarm Expired at 1573492636 : Alarm Request Number: (3) Alarm Request: (5) ["C"]
+(5) C
+Display Thread 2: Alarm Expired at 1573492638 : Alarm Request Number: (4) Alarm Request: (5) ["D"]
+(5) D
+
+TEST 5:
+
+alarm> 
+Bad Command
+
+TEST 6:
+ 
+alarm> 
+Main Thread Received Alarm Request Number:(1) Alarm Request: (4) ["A"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(1) Alarm Request: (4) ["A"]
+Display Thread 1: Received Alarm Request Number:1 Alarm Request: (4) ["A"]
+Main Thread Received Alarm Request Number:(2) Alarm Request: (5) ["F"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(2) Alarm Request: (5) ["F"]
+Display Thread 2: Received Alarm Request Number:2 Alarm Request: (5) ["F"]
+Display Thread 1: Number of Seconds Left 2 : Alarm Request Number: (1) Alarm Request: (4) ["A"]
+Main Thread Received Alarm Request Number:(3) Alarm Request: (3) ["D"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(3) Alarm Request: (3) ["D"]
+Display Thread 1: Received Alarm Request Number:3 Alarm Request: (3) ["D"]
+Display Thread 2: Number of Seconds Left 3 : Alarm Request Number: (2) Alarm Request: (5) ["F"]
+Main Thread Received Alarm Request Number:(4) Alarm Request: (6) ["G"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(4) Alarm Request: (6) ["G"]
+Display Thread 2: Received Alarm Request Number:4 Alarm Request: (6) ["G"]
+Main Thread Received Alarm Request Number:(5) Alarm Request: (7) ["S"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(5) Alarm Request: (7) ["S"]
+Display Thread 1: Received Alarm Request Number:5 Alarm Request: (7) ["S"]
+Display Thread 1: Alarm Expired at 1573493024 : Alarm Request Number: (1) Alarm Request: (4) ["A"]
+(4) A
+Display Thread 2: Number of Seconds Left 1 : Alarm Request Number: (2) Alarm Request: (5) ["F"]
+Display Thread 1: Alarm Expired at 1573493025 : Alarm Request Number: (3) Alarm Request: (3) ["D"]
+(3) D
+Main Thread Received Alarm Request Number:(6) Alarm Request: (2) ["d"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(6) Alarm Request: (2) ["d"]
+Display Thread 2: Received Alarm Request Number:6 Alarm Request: (2) ["d"]
+Display Thread 2: Alarm Expired at 1573493026 : Alarm Request Number: (2) Alarm Request: (5) ["F"]
+(5) F
+alarm> 
+Display Thread 1: Number of Seconds Left 3 : Alarm Request Number: (5) Alarm Request: (7) ["S"]
+Display Thread 2: Alarm Expired at 1573493028 : Alarm Request Number: (6) Alarm Request: (2) ["d"]
+(2) d
+Display Thread 1: Number of Seconds Left 1 : Alarm Request Number: (5) Alarm Request: (7) ["S"]
+Display Thread 2: Alarm Expired at 1573493029 : Alarm Request Number: (4) Alarm Request: (6) ["G"]
+(6) G
+Main Thread Received Alarm Request Number:(7) Alarm Request: (6) ["h"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(7) Alarm Request: (6) ["h"]
+Display Thread 1: Received Alarm Request Number:7 Alarm Request: (6) ["h"]
+Main Thread Received Alarm Request Number:(8) Alarm Request: (8) ["j"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(8) Alarm Request: (8) ["j"]
+Display Thread 2: Received Alarm Request Number:8 Alarm Request: (8) ["j"]
+Display Thread 1: Alarm Expired at 1573493031 : Alarm Request Number: (5) Alarm Request: (7) ["S"]
+(7) S
+Main Thread Received Alarm Request Number:(9) Alarm Request: (2) ["d"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(9) Alarm Request: (2) ["d"]
+Display Thread 1: Received Alarm Request Number:9 Alarm Request: (2) ["d"]
+Display Thread 2: Number of Seconds Left 6 : Alarm Request Number: (8) Alarm Request: (8) ["j"]
+Display Thread 1: Alarm Expired at 1573493034 : Alarm Request Number: (9) Alarm Request: (2) ["d"]
+(2) d
+Display Thread 2: Number of Seconds Left 4 : Alarm Request Number: (8) Alarm Request: (8) ["j"]
+Main Thread Received Alarm Request Number:(10) Alarm Request: (20) ["d"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 2 Alarm Request Number:(10) Alarm Request: (20) ["d"]
+Display Thread 2: Received Alarm Request Number:10 Alarm Request: (20) ["d"]
+Display Thread 1: Alarm Expired at 1573493036 : Alarm Request Number: (7) Alarm Request: (6) ["h"]
+(6) h
+Display Thread 2: Number of Seconds Left 2 : Alarm Request Number: (8) Alarm Request: (8) ["j"]
+Main Thread Received Alarm Request Number:(11) Alarm Request: (5) ["g"]
+alarm> 
+Alarm Thread Passed on Alarm Request to Display Thread 1 Alarm Request Number:(11) Alarm Request: (5) ["g"]
+Display Thread 1: Received Alarm Request Number:11 Alarm Request: (5) ["g"]
+Display Thread 1: Number of Seconds Left 3 : Alarm Request Number: (11) Alarm Request: (5) ["g"]
+Display Thread 2: Alarm Expired at 1573493039 : Alarm Request Number: (8) Alarm Request: (8) ["j"]
+(8) j
+Display Thread 1: Number of Seconds Left 1 : Alarm Request Number: (11) Alarm Request: (5) ["g"]
+Display Thread 2: Number of Seconds Left 13 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 1: Alarm Expired at 1573493042 : Alarm Request Number: (11) Alarm Request: (5) ["g"]
+(5) g
+Display Thread 2: Number of Seconds Left 11 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Number of Seconds Left 9 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Number of Seconds Left 7 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Number of Seconds Left 5 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Number of Seconds Left 3 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Number of Seconds Left 1 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+Display Thread 2: Alarm Expired at 1573493055 : Alarm Request Number: (10) Alarm Request: (20) ["d"]
+(20) d
